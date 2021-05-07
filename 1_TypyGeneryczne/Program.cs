@@ -11,7 +11,7 @@ namespace _1_TypyGeneryczne
         static void Main(string[] args)
         {
             var kolejka = new KolejkaKolowa(pojemnosc: 3);
-            while (true)
+            while(true)
             {
                 double wartosc;
                 var wartoscWejsciowa = Console.ReadLine();
@@ -22,11 +22,18 @@ namespace _1_TypyGeneryczne
                 }
                 break;
             }
+            kolejka.Zapisz("Marcin");
+            double sum = 0.0;
+            
             Console.WriteLine("W naszej kolecjce jest: ");
             while (!kolejka.JestPusty)
             {
-                Console.WriteLine("\t\t" + kolejka.Czytaj());
+                var wartosc = kolejka.Czytaj();
+                if (wartosc is double)
+                    sum += (double)wartosc;
             }
+            Console.WriteLine(sum);
+            
         }
     }
 }

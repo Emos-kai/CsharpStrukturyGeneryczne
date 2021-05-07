@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace _1_TypyGeneryczne
 {
-    class KolejkaKolowa
+    public class KolejkaKolowa
     {
-        private double[] bufor;
+        private object[] bufor;
         private int pocztekBufora;
         private int koniecBufora;
 
@@ -18,12 +18,12 @@ namespace _1_TypyGeneryczne
 
         public KolejkaKolowa(int pojemnosc)
         {
-            bufor = new double[pojemnosc + 1];
+            bufor = new object[pojemnosc + 1];
             pocztekBufora = 0;
             koniecBufora = 0;
         }
 
-        public void Zapisz(double wartosc)
+        public void Zapisz(object wartosc)
         {
             bufor[koniecBufora] = wartosc;
             koniecBufora = (koniecBufora + 1) % bufor.Length;
@@ -32,7 +32,7 @@ namespace _1_TypyGeneryczne
                 pocztekBufora = (pocztekBufora + 1) % bufor.Length;
         }
 
-        public double Czytaj()
+        public object Czytaj()
         {
             var wynik = bufor[pocztekBufora];
             pocztekBufora = (pocztekBufora + 1) % bufor.Length;

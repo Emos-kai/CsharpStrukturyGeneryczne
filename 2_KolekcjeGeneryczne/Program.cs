@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _1_TypyGeneryczne
+namespace _2_KolekcjeGeneryczne
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var kolejka = new KolejkaKolowa();
+            
         }
     }
 }

@@ -10,7 +10,23 @@ namespace _1_TypyGeneryczne
     {
         static void Main(string[] args)
         {
-            var kolejka = new KolejkaKolowa();
+            var kolejka = new KolejkaKolowa(pojemnosc: 3);
+            while (true)
+            {
+                double wartosc;
+                var wartoscWejsciowa = Console.ReadLine();
+                if(double.TryParse(wartoscWejsciowa, out wartosc))
+                {
+                    kolejka.Zapisz(wartosc);
+                    continue;
+                }
+                break;
+            }
+            Console.WriteLine("W naszej kolecjce jest: ");
+            while (!kolejka.JestPusty)
+            {
+                Console.WriteLine("\t\t" + kolejka.Czytaj());
+            }
         }
     }
 }

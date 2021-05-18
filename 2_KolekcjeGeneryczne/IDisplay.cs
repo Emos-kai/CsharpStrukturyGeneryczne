@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace _2_KolekcjeGeneryczne
 {
-    public class Pracownik
+    interface IDisplay
     {
-        public string Imie { get; set; }
-        public string Nazwisko { get; set; }
+        void Display();
     }
 }

@@ -21,16 +21,12 @@ namespace _2_KolekcjeGeneryczne
             //    }
             //    liczby.Add(1);
             //}
-            Queue<Pracownik> Kolejka = new Queue<Pracownik>();
-            Kolejka.Enqueue(new Pracownik { Imie = "Marcin" });
-            Kolejka.Enqueue(new Pracownik { Imie = "Tomek" });
-            Kolejka.Enqueue(new Pracownik { Imie = "Kamil" });
-            Kolejka.Enqueue(new Pracownik { Imie = "Julia" });
-            while(Kolejka.Count > 0)
-            {
-                var pracownik = Kolejka.Dequeue();
-                Console.WriteLine(pracownik.Imie + " " + pracownik.Nazwisko);
-            }
+
+            IDisplay kolejka = new Kolejka();
+            IDisplay stos = new Stos();
+            kolejka.Display();
+            stos.Display();
+            
         }
     }
 }

@@ -21,12 +21,14 @@ namespace _2_KolekcjeGeneryczne
             //    }
             //    liczby.Add(1);
             //}
+            //IDisplay kolejka = new Kolejka();
+            //IDisplay stos = new Stos();
+            HashSet set = new HashSet();
+            set.Display();
+            //kolejka.Display();
+            //stos.Display();
 
-            IDisplay kolejka = new Kolejka();
-            IDisplay stos = new Stos();
-            kolejka.Display();
-            stos.Display();
-            
+           
         }
     }
 }

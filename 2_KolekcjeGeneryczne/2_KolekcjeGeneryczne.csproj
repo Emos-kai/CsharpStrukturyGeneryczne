@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HashSet.cs" />
     <Compile Include="IDisplay.cs" />
     <Compile Include="Kolejka.cs" />
     <Compile Include="Pracownik.cs" />

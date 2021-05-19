@@ -51,6 +51,8 @@
     <Compile Include="Pracownik.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SortedDictionary.cs" />
+    <Compile Include="SortedList.cs" />
     <Compile Include="Stos.cs" />
   </ItemGroup>
   <ItemGroup>

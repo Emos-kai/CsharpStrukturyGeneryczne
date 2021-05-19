@@ -6,19 +6,20 @@ using System.Threading.Tasks;
 
 namespace _2_KolekcjeGeneryczne
 {
-    class Dictionary : IDisplay
+    public class SortedDictionary : IDisplay
     {
         public void Display()
         {
-            var Pracownicy = new SortedDictionary<string, List<Pracownik>>();
+            var Pracownicy = new Dictionary<string, List<Pracownik>>();
             Pracownicy.Add("Ksiegowosc", new List<Pracownik>()
             {
                 new Pracownik { Nazwisko = "Nowak" },
                 new Pracownik { Nazwisko = "Kowla" },
                 new Pracownik { Nazwisko = "Kaczor"}
             });
-            Pracownicy.Add("Sprzedaz", new List<Pracownik> 
-            { 
+            Pracownicy["Ksiegowosc"].Add(new Pracownik { Nazwisko = "Nowak" });
+            Pracownicy.Add("Sprzedaz", new List<Pracownik>
+            {
                 new Pracownik { Imie = "Jan", Nazwisko = "Kowal" }
             });
             Pracownicy.Add("Informatyka", new List<Pracownik>()
@@ -28,13 +29,8 @@ namespace _2_KolekcjeGeneryczne
             });
             foreach (var item in Pracownicy)
             {
-                Console.WriteLine($"Dział {item.Key}");
-                foreach (var pracownik in item.Value)
-                {
-                    Console.WriteLine(pracownik.Nazwisko);
-                }
+                Console.WriteLine($"{item.Key}, {item.Value.Count}");
             }
-            
         }
     }
 }

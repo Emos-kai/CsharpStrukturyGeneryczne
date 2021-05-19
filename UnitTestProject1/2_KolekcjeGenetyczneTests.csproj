@@ -49,6 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DictionaryTest.cs" />
     <Compile Include="HashSetTests.cs" />
     <Compile Include="LinkedListTest.cs" />
     <Compile Include="ListaTest.cs" />

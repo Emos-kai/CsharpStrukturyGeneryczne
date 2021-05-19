@@ -16,10 +16,10 @@ namespace _2_KolekcjeGeneryczne
             //set.Display();
             //kolejka.Display();
             //stos.Display();
-            LinkedList lista = new LinkedList();
-            lista.Display();
-
-           
+            //LinkedList lista = new LinkedList();
+            //lista.Display();
+            
+                       
         }
     }
 }

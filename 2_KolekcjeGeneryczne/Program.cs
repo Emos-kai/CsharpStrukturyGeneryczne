@@ -10,23 +10,14 @@ namespace _2_KolekcjeGeneryczne
     {
         static void Main(string[] args)
         {
-            //var liczby = new List<int>();
-            //var pojemnosc = -1;
-            //while (true)
-            //{
-            //    if (liczby.Capacity != pojemnosc)
-            //    {
-            //        pojemnosc = liczby.Capacity;
-            //        Console.WriteLine(pojemnosc);
-            //    }
-            //    liczby.Add(1);
-            //}
             //IDisplay kolejka = new Kolejka();
             //IDisplay stos = new Stos();
-            HashSet set = new HashSet();
-            set.Display();
+            //HashSet set = new HashSet();
+            //set.Display();
             //kolejka.Display();
             //stos.Display();
+            LinkedList lista = new LinkedList();
+            lista.Display();
 
            
         }

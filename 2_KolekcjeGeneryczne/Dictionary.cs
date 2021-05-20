@@ -10,21 +10,25 @@ namespace _2_KolekcjeGeneryczne
     {
         public void Display()
         {
-            var Pracownicy = new SortedDictionary<string, List<Pracownik>>();
-            Pracownicy.Add("Ksiegowosc", new List<Pracownik>()
+            var Pracownicy = new SortedDictionary<string, HashSet<Pracownik>>();
+            Pracownicy.Add("Ksiegowosc", new HashSet<Pracownik>(new PracownikComparer())
             {
                 new Pracownik { Nazwisko = "Nowak" },
-                new Pracownik { Nazwisko = "Kowla" },
+                new Pracownik { Nazwisko = "Kowal" },
                 new Pracownik { Nazwisko = "Kaczor"}
             });
-            Pracownicy.Add("Sprzedaz", new List<Pracownik> 
+            Pracownicy.Add("Sprzedaz", new HashSet<Pracownik>(new PracownikComparer()) 
             { 
-                new Pracownik { Imie = "Jan", Nazwisko = "Kowal" }
+                new Pracownik { Nazwisko = "Kowal" },
+                new Pracownik { Nazwisko = "Kiczor" },
+                new Pracownik { Nazwisko = "Kowal" },
+                new Pracownik { Nazwisko = "Kowal" },
+
             });
-            Pracownicy.Add("Informatyka", new List<Pracownik>()
+            Pracownicy.Add("Informatyka", new HashSet<Pracownik>(new PracownikComparer())
             {
-                new Pracownik{Imie = "Kamil", Nazwisko = "Kowalski"},
-                new Pracownik{Imie = "Jan", Nazwisko = "Bogacki"}
+                new Pracownik { Nazwisko = "Kowalski"},
+                new Pracownik {  Nazwisko = "Bogacki"}
             });
             foreach (var item in Pracownicy)
             {

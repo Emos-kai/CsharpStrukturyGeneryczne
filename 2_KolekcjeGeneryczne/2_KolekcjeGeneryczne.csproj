@@ -48,6 +48,7 @@
     <Compile Include="IDisplay.cs" />
     <Compile Include="Kolejka.cs" />
     <Compile Include="LinkedList.cs" />
+    <Compile Include="PracownikComparer.cs" />
     <Compile Include="Pracownik.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

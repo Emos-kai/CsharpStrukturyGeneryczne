@@ -14,6 +14,10 @@ namespace KlasyIInterfejsyGeneryczne
             var kolejkaInt = new KolejkaKolowa<double>(pojemnosc: 5);
             WprowadzanieDanych(kolejkaInt);
             PrzetwarzanieDanych(kolejkaInt);
+            foreach (var item in kolejkaInt)
+            {
+                Console.WriteLine(item);
+            }
 
         }
         private static void PrzetwarzanieDanych(IKolejka<double> kolejka)

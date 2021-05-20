@@ -20,10 +20,12 @@ namespace _2_KolekcjeGeneryczne
             //lista.Display();
             //SortedDictionary p = new SortedDictionary();
             //p.Display();
-            IDisplay s = new SortedList();
-            s.Display();
-            IDisplay v = new SortedSet();
-            v.Display();
+            //IDisplay s = new SortedList();
+            //s.Display();
+            //IDisplay v = new SortedSet();
+            //v.Display();
+            IDisplay slownik = new Dictionary();
+            slownik.Display();
             
                        
         }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KlasyIInterfejsyGeneryczne
 {
-    interface IKolejka<T>
+    interface IKolejka<T> : IEnumerable<T>
     {
         bool JestPusty { get; }
         bool JestPelny { get; }

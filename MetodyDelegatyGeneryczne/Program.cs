@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KlasyIInterfejsyGeneryczne
+namespace MetodyDelegatyGeneryczne
 {
     class Program
     {
@@ -12,12 +12,11 @@ namespace KlasyIInterfejsyGeneryczne
         {
             var kolejka = new DuzaKolejka<double>();
             var kolejkaInt = new KolejkaKolowa<double>(pojemnosc: 5);
-            WprowadzanieDanych(kolejkaInt);
-            PrzetwarzanieDanych(kolejkaInt);
-            foreach (var item in kolejkaInt)
-            {
-                Console.WriteLine(item);
-            }
+            WprowadzanieDanych(kolejka);
+            kolejka.Print();
+            var elementyJakoInt = kolejka.ElementJako<double, int>();
+            PrzetwarzanieDanych(kolejka);
+            
         }
         private static void PrzetwarzanieDanych(IKolejka<double> kolejka)
         {
@@ -46,3 +45,4 @@ namespace KlasyIInterfejsyGeneryczne
         }
     }
 }
+

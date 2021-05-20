@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlasyIInterfejsyGeneryczneT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3_KlasyIInterfejsyGeneryczne", "KlasyIInterfejsyGeneryczne\3_KlasyIInterfejsyGeneryczne.csproj", "{F16417F2-C4EC-45D5-A5D9-5D46A7A12BD5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetodyDelegatyGeneryczne", "MetodyDelegatyGeneryczne\MetodyDelegatyGeneryczne.csproj", "{6F16FE11-2686-419C-9E3A-4BD09BA49C08}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{F16417F2-C4EC-45D5-A5D9-5D46A7A12BD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F16417F2-C4EC-45D5-A5D9-5D46A7A12BD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F16417F2-C4EC-45D5-A5D9-5D46A7A12BD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F16FE11-2686-419C-9E3A-4BD09BA49C08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F16FE11-2686-419C-9E3A-4BD09BA49C08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F16FE11-2686-419C-9E3A-4BD09BA49C08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F16FE11-2686-419C-9E3A-4BD09BA49C08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

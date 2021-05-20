@@ -8,12 +8,16 @@ namespace MetodyDelegatyGeneryczne
 {
     class Program
     {
+        static void KonsolaWypisz(double dane)
+        {
+            Console.WriteLine(dane);
+        }
         static void Main(string[] args)
         {
             var kolejka = new DuzaKolejka<double>();
             var kolejkaInt = new KolejkaKolowa<double>(pojemnosc: 5);
             WprowadzanieDanych(kolejka);
-            kolejka.Print();
+            kolejka.Print(KonsolaWypisz);
             var elementyJakoInt = kolejka.ElementJako<double, int>();
             PrzetwarzanieDanych(kolejka);
             

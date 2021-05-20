@@ -10,7 +10,7 @@ namespace _2_KolekcjeGeneryczne
     {
         public void Display()
         {
-            var Pracownicy = new SortedDictionary<string, HashSet<Pracownik>>();
+            var Pracownicy = new Dictionary<string, HashSet<Pracownik>>();
             Pracownicy.Add("Ksiegowosc", new HashSet<Pracownik>(new PracownikComparer())
             {
                 new Pracownik { Nazwisko = "Nowak" },

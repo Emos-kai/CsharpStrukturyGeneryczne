@@ -10,7 +10,7 @@ namespace _2_KolekcjeGeneryczne
     {
         public void Display()
         {
-            var Pracownicy = new SortedDictionary<string, List<Pracownik>>();
+            var Pracownicy = new SortedDictionary<string, List< Pracownik>>();
             Pracownicy.Add("Ksiegowosc", new List<Pracownik>()
             {
                 new Pracownik { Nazwisko = "Nowak" },

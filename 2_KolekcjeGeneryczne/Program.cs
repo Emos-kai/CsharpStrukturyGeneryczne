@@ -24,8 +24,10 @@ namespace _2_KolekcjeGeneryczne
             //s.Display();
             //IDisplay v = new SortedSet();
             //v.Display();
-            IDisplay slownik = new Dictionary();
-            slownik.Display();
+            //IDisplay slownik = new Dictionary();
+            //slownik.Display();
+            IDisplay Dzial = new KolekcjaPracownikow();
+            Dzial.Display(); 
             
                        
         }

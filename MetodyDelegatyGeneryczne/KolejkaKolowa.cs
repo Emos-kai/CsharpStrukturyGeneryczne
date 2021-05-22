@@ -18,10 +18,22 @@ namespace MetodyDelegatyGeneryczne
             base.Zapisz(wartosc);
             if (kolejka.Count > pojemnosc)
             {
-                kolejka.Dequeue();
+               var usuniety = kolejka.Dequeue();
+                PoUsunieciuElementu(usuniety, wartosc);
             }
         }
+
+        private void PoUsunieciuElementu(T usuniety, T wartosc)
+        {
+            if(elementUsuniety != null)
+            {
+                var args = new ELementUsunietyEventArgs<T>(usuniety, wartosc);
+                elementUsuniety(this, args);
+            }
+        }
+
         public override T Czytaj() => base.Czytaj();
         public override bool JestPelny => kolejka.Count == pojemnosc;
+        public event EventHandler<ELementUsunietyEventArgs<T>> elementUsuniety;
     }
 }

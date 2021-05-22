@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DuzaKolejka.cs" />
+    <Compile Include="ELementUsunietyEventArgs.cs" />
     <Compile Include="IKolejka.cs" />
     <Compile Include="KolejkaExtensions.cs" />
     <Compile Include="KolejkaKolowa.cs" />

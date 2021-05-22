@@ -14,14 +14,15 @@ namespace MetodyDelegatyGeneryczne
         }
         static void Main(string[] args)
         {
-            var kolejka = new DuzaKolejka<double>();
-            var kolejkaInt = new KolejkaKolowa<double>(pojemnosc: 5);
-            WprowadzanieDanych(kolejka);
-            kolejka.Print(KonsolaWypisz);
-            var elementyJakoInt = kolejka.ElementJako<double, int>();
-            PrzetwarzanieDanych(kolejka);
-            
+            var kolejka = new KolejkaKolowa<double>(pojemnosc: 3);
+            kolejka.elementUsuniety += Kolejka_elementUsuniety;
         }
+
+        private static void Kolejka_elementUsuniety(object sender, ELementUsunietyEventArgs<double> e)
+        {
+            Console.WriteLine("Kolejka jest pełna. Element usunięty to: {0} Nowy element to {1}", e.ElementUsuniety, e.ElementNowy);
+        }
+
         private static void PrzetwarzanieDanych(IKolejka<double> kolejka)
         {
             double sum = 0.0;
